@@ -21,7 +21,7 @@ export default function WorldTable() {
     }, [])
 
     return (
-        tableSpinner ? <Spinner/> : <Grid data={allData} columns={["Country", "Deaths", "active"]} fixedHeader={true} pagination={{limit: 10,}}/>
+        tableSpinner ? <Spinner/> : <Grid   resizable={true} sort={true} search={true} data={allData} columns={["Country", "Deaths", "active"]} fixedHeader={true} pagination={{limit: 10,}}/>
 
     );
 }
